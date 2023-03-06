@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 
 export default function NavBar() {
@@ -6,9 +7,16 @@ export default function NavBar() {
 			<h1>Logo</h1>
 			<nav>
 				<ul>
-					<li>Home</li>
-					<li>about us</li>
-					<li>learn</li>
+					<li>
+						<Link to="/">Home</Link>
+					</li>
+
+					<li>
+						<Link to="/about">About us</Link>
+					</li>
+					<li>
+						<Link to="/learn">Learn</Link>
+					</li>
 				</ul>
 			</nav>
 		</header>
