@@ -6,6 +6,11 @@ export default function Home() {
 		<>
 			<Layout>
 				<h1>Welcome to EduP</h1>
+
+				<div>
+					<h2>Here is a little image of a PoS</h2>
+					<img src="/posSystem.png" alt="pos" width={400} />
+				</div>
 			</Layout>
 		</>
 	);
