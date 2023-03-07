@@ -34,5 +34,6 @@ module.exports = {
 		title: 'eduP',
 		description: 'This is an edu platform',
 		copyright: 'copyright 2021.',
+		contact: 'mail@mailMe.com',
 	},
 };

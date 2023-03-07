@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 export default function Blogs({ data }) {
 	const blogs = data.allMarkdownRemark.nodes;
 
-	console.log(blogs);
+	const contact = data.site.siteMetadata.contact;
 
 	return (
 		<Layout>
@@ -23,6 +23,8 @@ export default function Blogs({ data }) {
 					))}
 				</section>
 			</div>
+
+			<p>Reach out to us at {contact}</p>
 		</Layout>
 	);
 }
@@ -44,6 +46,24 @@ export default function Blogs({ data }) {
 // `;
 
 //With sort
+// export const query = graphql`
+// 	query BlogQuery {
+// 		allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+// 			nodes {
+// 				frontmatter {
+// 					author
+// 					slug
+// 					title
+// 					date
+// 				}
+// 				id
+// 			}
+// 		}
+// 	}
+// `;
+
+//Multiple query
+
 export const query = graphql`
 	query BlogQuery {
 		allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
@@ -54,6 +74,12 @@ export const query = graphql`
 					title
 					date
 				}
+				id
+			}
+		}
+		site {
+			siteMetadata {
+				contact
 			}
 		}
 	}

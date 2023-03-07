@@ -67,7 +67,7 @@ note that since we do not have much to config with plug in we will simply add th
 
 ## Static query
 
-For any query outside of the pages, like components you need to either use `useStaticQuery` hook or `StaticQuery` component. For more modern approch you can use the hook. Although I faced some bugs during usage of hooks but you can comment out or restatrt the server once or twice to make the query works. In case, nothign works, do follow the instruction and raise an issue.
+For any query outside of the pages, like components you need to either use `useStaticQuery` hook or `StaticQuery` component. For more modern approch you can use the hook. Although I faced some bugs during usage of hooks but you can comment out or restatrt the server once or twice to make the query works. In case, nothign works, go to [gatsby issue](https://github.com/gatsbyjs/gatsby/issues/24902) see if they work, otherise do follow the instruction and raise an issue.
 
 If everything works, go to [blogs](src/pages/blogs.js) and see how the static data fethcing works.
 
@@ -76,3 +76,7 @@ If everything works, go to [blogs](src/pages/blogs.js) and see how the static da
 ## Sorting Queries
 
 you just simply make a new query with order selected from the explorer. Generally, if you know how graphQL works, you can pretty much type in otherwise, play with the explorer until you find the right match. Sorting is quite straightforward. See [Blogs](src/pages/blogs.js) for how we made the query with sort.
+
+## Multiple query
+
+You can make mulitple queries inside one graphQl but **NOT** under several graphQL. A great example is how we made an additional query inside the [Blogs](src/pages/blogs.js) file.
