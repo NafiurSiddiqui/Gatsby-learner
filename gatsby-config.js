@@ -8,5 +8,10 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [],
-}
+	plugins: [],
+	siteMetadata: {
+		title: 'eduP',
+		description: 'This is an edu platform',
+		copyright: 'copyright 2021.',
+	},
+};

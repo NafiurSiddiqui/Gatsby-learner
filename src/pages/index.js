@@ -1,7 +1,9 @@
+import { graphql } from 'gatsby';
 import * as React from 'react';
 import Layout from '../components/Layout';
 
-export default function Home() {
+export default function Home({ data }) {
+	// console.log(data);
 	return (
 		<>
 			<Layout>
@@ -15,3 +17,15 @@ export default function Home() {
 		</>
 	);
 }
+
+export const query = graphql`
+	query MyQuery {
+		site {
+			siteMetadata {
+				title
+				description
+				copyright
+			}
+		}
+	}
+`;

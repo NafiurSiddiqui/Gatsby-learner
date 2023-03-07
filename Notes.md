@@ -33,4 +33,18 @@ It does so by using source plugin.
 
 ![graphQlLogo](static/gqlogo.png)
 
-This is when you need to go `http://localhost:8000/__graphql`. Here you will be adding site meta data and page information and more.
+This is when you need to go `http://localhost:8000/__graphql`. Here you will be adding site meta data and page information and more. Get familiar with the playground. This is incredibly useful. Since this is a whole new world if you are never worked with graphQl, lookup for some tutorials or docs, whichever suits you.
+
+# Site Meta data
+
+Go to [`gatsby-config.js`](gatsby-config.js) to update your site meta-data for SEO. This is where gatsby rocks! 🤘
+
+Right after updating meta-data, you must restart the server with `gatsby develop`.
+
+You build and place your query right at the bottom of the pages. for instance, here inside the [index](src/pages/index.js) file. You will have the data there.
+
+⚠️ Placing your query other than the pages, at the bottom is not gonna work for any components outside of the pages. for that you need _static query_.
+
+## Static Query
+
+Essentially you will need to import `graphQl` and `useStaticQuery` hook to use that inside the components other than pages. see how we made a dynamic header inside the [Navbar](src/components/NavBar.js)

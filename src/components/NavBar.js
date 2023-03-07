@@ -1,10 +1,24 @@
-import { Link } from 'gatsby';
+import { Link, graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
 export default function NavBar() {
+	const data = useStaticQuery(
+		graphql`
+			query MyQuery {
+				site {
+					siteMetadata {
+						title
+					}
+				}
+			}
+		`
+	);
+
+	const { title } = data.site.siteMetadata;
+
 	return (
 		<header>
-			<h1>Logo</h1>
+			<h1>{title}</h1>
 			<nav>
 				<ul>
 					<li>
@@ -22,3 +36,8 @@ export default function NavBar() {
 		</header>
 	);
 }
+
+/**
+ * @graphQl - to activate the query
+ * @useStaticQuery - Hook for query to use outside of the pages.
+ */
