@@ -28,16 +28,32 @@ export default function Blogs({ data }) {
 }
 
 //exprot BlogQuery
+// export const query = graphql`
+// 	query BlogQuery {
+// 		allMarkdownRemark {
+// 			nodes {
+// 				frontmatter {
+// 					author
+// 					slug
+// 					title
+// 				}
+// 				id
+// 			}
+// 		}
+// 	}
+// `;
+
+//With sort
 export const query = graphql`
 	query BlogQuery {
-		allMarkdownRemark {
+		allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
 			nodes {
 				frontmatter {
 					author
 					slug
 					title
+					date
 				}
-				id
 			}
 		}
 	}

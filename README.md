@@ -74,3 +74,5 @@ If everything works, go to [blogs](src/pages/blogs.js) and see how the static da
 💡 Remember you need to make your query first in the graphQL exlporer. You need to select the kind of query you wanna make from the explorer.
 
 ## Sorting Queries
+
+you just simply make a new query with order selected from the explorer. Generally, if you know how graphQL works, you can pretty much type in otherwise, play with the explorer until you find the right match. Sorting is quite straightforward. See [Blogs](src/pages/blogs.js) for how we made the query with sort.

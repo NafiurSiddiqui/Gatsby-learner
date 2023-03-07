@@ -2,7 +2,7 @@
 title: example
 author: Beddie
 slug: example-blog
-date: 2023-04-01T00:00+10:00
+date: 2023-04-01T00:00+10:00Z
 ---
 
 **The ultimate web dev roadmap**
