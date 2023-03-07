@@ -48,3 +48,10 @@ You build and place your query right at the bottom of the pages. for instance, h
 ## Static Query
 
 Essentially you will need to import `graphQl` and `useStaticQuery` hook to use that inside the components other than pages. see how we made a dynamic header inside the [Navbar](src/components/NavBar.js)
+
+## Fetching data from sources
+
+To fetch data from any sources, we need to register a plug-in.
+you need to go to [config](gatsby-config.js). Go to [gatsby plugins](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem) and grab the command and install the package. Gatsby has a great open source plugins.
+
+Note that you can create as many instances as you need inside the plugins.
