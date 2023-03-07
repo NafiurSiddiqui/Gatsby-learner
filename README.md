@@ -56,7 +56,7 @@ you need to go to [config](gatsby-config.js). Go to [gatsby plugins](https://www
 
 Note that you can create as many instances as you need inside the plugins.
 
-## Markdown transoformation
+## Markdown transformation
 
 Makrdown can be used as source for your data.
 This is one of the way you can prepare your data without worrying about HTML format. see [blogs](src/blogs/blogs.md) for how you would do it as an example. You can always learn about markdown online. It is super easy.
@@ -64,3 +64,11 @@ This is one of the way you can prepare your data without worrying about HTML for
 once you have your file ready, you need to plugin to process or format the markdown into html. such as [gatsby-remark](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/). follow the same procedure of installation and tweak the config.
 
 note that since we do not have much to config with plug in we will simply add the name of the plugin.
+
+## Static query
+
+For any query outside of the pages, like components you need to either use `useStaticQuery` hook or `StaticQuery` component. For more modern approch you can use the hook. Although I faced some bugs during usage of hooks but you can comment out or restatrt the server once or twice to make the query works. In case, nothign works, do follow the instruction and raise an issue.
+
+If everything works, go to [blogs](src/pages/blogs.js) and see how the static data fethcing works.
+
+💡 Remember you need to make your query first in the graphQL exlporer. You need to select the kind of query you wanna make from the explorer.
