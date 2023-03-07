@@ -72,3 +72,5 @@ For any query outside of the pages, like components you need to either use `useS
 If everything works, go to [blogs](src/pages/blogs.js) and see how the static data fethcing works.
 
 💡 Remember you need to make your query first in the graphQL exlporer. You need to select the kind of query you wanna make from the explorer.
+
+## Sorting Queries
