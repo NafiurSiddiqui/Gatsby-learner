@@ -1,7 +1,7 @@
 ---
 title: The ultimate web dev roadmap
 author: Eddie
-slug: blogs
+slug: Roadmap-blogs
 ---
 
 **The ultimate web dev roadmap**

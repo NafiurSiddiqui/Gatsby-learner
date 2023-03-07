@@ -1,7 +1,7 @@
 ---
 title: example
 author: Beddie
-slug: example blog
+slug: example-blog
 ---
 
 **The ultimate web dev roadmap**
