@@ -1,6 +1,6 @@
 ---
 title: example
-author: Eddie
+author: Beddie
 slug: example blog
 ---
 

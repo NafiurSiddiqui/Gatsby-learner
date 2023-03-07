@@ -4,7 +4,7 @@ import React from 'react';
 export default function NavBar() {
 	const data = useStaticQuery(
 		graphql`
-			query MyQuery {
+			query SiteInfo {
 				site {
 					siteMetadata {
 						title
@@ -30,6 +30,9 @@ export default function NavBar() {
 					</li>
 					<li>
 						<Link to="/learn">Learn</Link>
+					</li>
+					<li>
+						<Link to="/blogs">Blogs</Link>
 					</li>
 				</ul>
 			</nav>

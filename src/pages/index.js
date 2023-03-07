@@ -3,7 +3,7 @@ import * as React from 'react';
 import Layout from '../components/Layout';
 
 export default function Home({ data }) {
-	// console.log(data);
+	console.log(data);
 	return (
 		<>
 			<Layout>
@@ -19,7 +19,7 @@ export default function Home({ data }) {
 }
 
 export const query = graphql`
-	query MyQuery {
+	query SiteInfo {
 		site {
 			siteMetadata {
 				title
