@@ -27,6 +27,8 @@ module.exports = {
 				path: `${__dirname}/src/blogs/`,
 			},
 		},
+		// transformer config
+		`gatsby-transformer-remark`,
 	],
 	siteMetadata: {
 		title: 'eduP',

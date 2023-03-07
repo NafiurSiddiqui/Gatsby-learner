@@ -55,3 +55,12 @@ To fetch data from any sources, we need to register a plug-in.
 you need to go to [config](gatsby-config.js). Go to [gatsby plugins](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem) and grab the command and install the package. Gatsby has a great open source plugins.
 
 Note that you can create as many instances as you need inside the plugins.
+
+## Markdown transoformation
+
+Makrdown can be used as source for your data.
+This is one of the way you can prepare your data without worrying about HTML format. see [blogs](src/blogs/blogs.md) for how you would do it as an example. You can always learn about markdown online. It is super easy.
+
+once you have your file ready, you need to plugin to process or format the markdown into html. such as [gatsby-remark](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/). follow the same procedure of installation and tweak the config.
+
+note that since we do not have much to config with plug in we will simply add the name of the plugin.
