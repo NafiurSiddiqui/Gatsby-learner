@@ -2,6 +2,12 @@
 
 ![Gatsbyimage](/static/Gatsby%20logo.png)
 
+## FIRST imrpession
+
+I did not continue to learn gatsby and refrained from making notes here anymore due to gatsby being **extremely** buggy. While i do love the whole idea and concept but at this point it is quite risky to use for production. Someday I would love to come back to it.
+
+With that said, if you wanna give it a shot, go ahead. They may fix these bugs by the time you are learning.
+
 ## Introduction
 
 Very first thing when would you wanna use gatsby over NextJS and other frameworks. Typically whenver you need a _static site generator_ known as _SSG_. This are the kind of site where there is not much of changes and the contents are quite static like a blog site, porfolio site and so on.
@@ -80,3 +86,9 @@ you just simply make a new query with order selected from the explorer. Generall
 ## Multiple query
 
 You can make mulitple queries inside one graphQl but **NOT** under several graphQL. A great example is how we made an additional query inside the [Blogs](src/pages/blogs.js) file.
+
+## Image Optimization
+
+You need to use [gatsby-image](https://www.gatsbyjs.com/plugins/gatsby-plugin-image/?=gatsby-image). you can use either `StaticImage` or `GatsbyImage` based on the type of image you will be rendering.
+
+As an example, on [learn](src/pages/learn/index.js) page, you have the `static` image used.
